@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean Glow – Skincare Rosa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-main-pink text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-main-pink sticky top-0 z-50 shadow-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-lg font-semibold">Clean Glow</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#sobre" class="hover:underline">Sobre</a>
+        <a href="#produtos" class="hover:underline">Produtos</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero-section h-screen flex flex-col justify-center items-center text-center px-6">
+      <h2 class="text-4xl md:text-5xl font-semibold fade-in">
+        Sua pele merece carinho 💖
+      </h2>
+      <p class="mt-4 max-w-xl text-white/80 text-lg fade-in delay">
+        Skincare natural, minimalista e cheia de amor-próprio.
+      </p>
+      <a
+        href="#produtos"
+        class="mt-8 inline-block px-6 py-3 rounded-full bg-white text-main-pink font-semibold text-sm hover:bg-pink-100 transition fade-in delay2"
+      >
+        Ver produtos
+      </a>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 px-6 bg-main-pink">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold">Sobre nós</h3>
+        <p class="mt-4 text-white/80 leading-relaxed">
+          A Clean Glow acredita em um cuidado gentil, acessível e feminino. Ingredientes naturais que nutrem e realçam sua beleza autêntica.
+        </p>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-20 px-6 bg-main-pink">
+      <div class="max-w-6xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold">Nossos produtos</h3>
+        <div class="mt-10 grid gap-8 grid-cols-1 md:grid-cols-3">
+          <div class="card">
+            <h4 class="font-semibold text-lg">Gel de Limpeza Rosa</h4>
+            <p class="mt-2 text-sm text-white/80">Remove impurezas com suavidade e aroma floral leve.</p>
+          </div>
+          <div class="card">
+            <h4 class="font-semibold text-lg">Tônico Calmante</h4>
+            <p class="mt-2 text-sm text-white/80">Equilibra o pH da pele e suaviza vermelhidões.</p>
+          </div>
+          <div class="card">
+            <h4 class="font-semibold text-lg">Sérum Iluminador</h4>
+            <p class="mt-2 text-sm text-white/80">Glow natural com vitamina C e rosa mosqueta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 px-6 bg-main-pink">
+      <div class="max-w-2xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold">Fale com a gente</h3>
+        <p class="mt-4 text-white/80">Dúvidas ou parcerias? Estamos por aqui 💌</p>
+        <a
+          href="mailto:contato@cleanglow.com"
+          class="mt-6 inline-block px-6 py-3 rounded-full bg-white text-main-pink font-medium text-sm hover:bg-pink-100 transition"
+        >
+          Entrar em contato
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-main-pink text-center py-6 text-sm text-white/70 border-t border-white/10">
+    © 2025 Clean Glow – Skincare com alma 💗
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

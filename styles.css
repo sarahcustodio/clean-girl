@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --main-pink: rgb(241, 115, 196);
+}
+
+/* Utilidades com a cor rosa principal */
+.bg-main-pink {
+  background-color: var(--main-pink);
+}
+.text-main-pink {
+  color: var(--main-pink);
+}
+
+/* Fontes e comportamento base */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--main-pink);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Animações suaves */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.6s ease-out forwards;
+}
+.fade-in.delay { animation-delay: 0.2s; }
+.fade-in.delay2 { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cartões de produto */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Seleção personalizada */
+::selection {
+  background: white;
+  color: var(--main-pink);
+}
